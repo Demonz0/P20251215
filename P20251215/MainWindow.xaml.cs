@@ -24,5 +24,10 @@ namespace P20251215
         {
             InitializeComponent();
         }
+
+        private void szamol_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
