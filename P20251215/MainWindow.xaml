@@ -19,6 +19,9 @@
             <RowDefinition/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-        <Label Content="Kérem az életkorodat"/>
+        <Label Content="Kérem az életkorodat" Grid.Column="1" Grid.Row="1" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Arial"/>
+        <Label Content=""/>
+        <TextBox x:Name="eletkor" Height="40" Width="150" Grid.Column="2" Grid.Row="1"/>
+        <Button x:Name="szamol" Content="szamol" Grid.Column="2" Grid.Row="2" Height="40" Width="150"/>
     </Grid>
 </Window>
