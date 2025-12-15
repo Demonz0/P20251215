@@ -21,8 +21,6 @@ namespace P20251215
     /// Interaction logic for MainWindow.xaml
     /// </summary>
 
-    [Test]
-
     public partial class MainWindow : Window
     {
         public MainWindow()
