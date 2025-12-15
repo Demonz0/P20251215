@@ -21,18 +21,30 @@ namespace P20251215
     /// Interaction logic for MainWindow.xaml
     /// </summary>
 
+
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
-
+        
         private void szamol_Click(object sender, RoutedEventArgs e)
         {
             DateTime datum = DateTime.Now;
-            szulev.Content = $"Születési éved: {datum.Year - Convert.ToInt32(eletkor.Text)}";
-            
+            szulev.Content = $"Születési éved: {datum.Year - Convert.ToInt32(eletkor.Text)}"; 
+        }
+        public class test 
+        {
+            [Test]
+            public void Test()
+            {
+                DateTime datum = DateTime.Now;
+                int eletkor = 25;
+                int expectedszuletesiev = datum.Year - eletkor;
+                Assert.Equals(expectedszuletesiev, datum.Year - eletkor);
+            }
         }
 
     }
